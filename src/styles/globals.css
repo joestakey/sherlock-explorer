@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Telegraf';
+  src: url('/fonts/PPTelegraf-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Telegraf';
+  src: url('/fonts/PPTelegraf-Ultrabold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Telegraf';
+  src: url('/fonts/PPTelegraf-Ultralight.otf');
+  font-weight: light;
+}
+:root {
+  --foreground-rgb: #df2c2c;
+  --background-start-rgb: #FFDEE9;
+  --background-end-rgb: #B5FFFC;
+  
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html, body {
+  min-height: 100%;
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: var(--background-start-rgb);
+  background-image: linear-gradient(10deg, var(--background-start-rgb) 0%, var(--background-end-rgb) 60%);
+  min-height: fit-content;
+  width: 100%;
+}
+
+.font-custom {
+  font-family: 'Telegraf', sans-serif;
+  font-weight: normal;
+}
+
+.font-custom-bold {
+  font-family: 'Telegraf', sans-serif;
+  font-weight: bold;
+}
+
+.font-custom-light {
+  font-family: 'Telegraf', sans-serif;
+  font-weight: light;
+}
+
+
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;  
+}
+::-moz-placeholder {
+  font-style: italic;  
+}
+:placeholder {
+  font-style: italic;  
+}

@@ -234,20 +234,20 @@ export default function Home() {
                           if (isLoading) {
                             return <div className="center">Loading...</div>;
                           }                  
+                          if (isError) {
+                            return (
+                              <div className="center">
+                                You have hit the limit of calls to the Github API. Please wait one minute before searching reports again{" "}
+                                <span role="img" aria-label="sad">
+                                  ⚠️
+                                </span>
+                              </div>
+                            );
+                          }
                           if (status === "error") {
                             return (
                               <div className="center">
                                 🧐 We found no reports for this user, are you sure the spelling is correct?
-                              </div>
-                            );
-                          }
-                          if (isError) {
-                            return (
-                              <div className="center">
-                                You have hit the hourly limit of calls to the Github API. Please wait an hour before searching reports again{" "}
-                                <span role="img" aria-label="sad">
-                                  ⚠️
-                                </span>
                               </div>
                             );
                           }

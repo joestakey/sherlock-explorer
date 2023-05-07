@@ -9,9 +9,6 @@ async function fetchReports(user: string) {
               state: "all",
               page: i,
               per_page: 100,
-            },
-            headers: {
-              Authorization: `Bearer ${process.env.AUTH_KEY}`
             }
           },
         );

@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { useQuery } from "react-query";
-import fetchReports from '../modules/api/fetchApi';
+import fetchReports from './api/fetchApi';
 import { createFile, Element } from '../modules/utils';
 
 export default function Home() {

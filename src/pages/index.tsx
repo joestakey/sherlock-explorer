@@ -244,9 +244,9 @@ export default function Home() {
                           if (isError) {
                             return (
                               <div className="center">
-                                There was an error fetching your reports{" "}
+                                You have hit the hourly limit of calls to the Github API. Please wait an hour before searching reports again{" "}
                                 <span role="img" aria-label="sad">
-                                  😢
+                                  ⚠️
                                 </span>
                               </div>
                             );
